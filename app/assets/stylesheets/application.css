@@ -1,0 +1,389 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+* {
+    margin: 0;
+}
+/*ヘッダー*/
+.header {
+    width: 100%;
+    height: 70px;
+    background-color: #EC715F;
+}
+.header-contents {
+    width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.header-image{
+    width: 100%;
+    height: 70px;
+}
+.header-nav {
+    display: flex;
+}
+.header-list {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.header-list-text {
+    color: #FAFAFA;
+    font-size: 16px;
+    margin: 0 30px;
+}
+/* メイン */
+.main {
+    background-image: url(mv.png);
+    background-size: cover;
+    height: 650px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-text {
+    color: #FAFAFA;
+    font-size: 64px;
+    text-align: center;
+}
+.main-sub-text {
+    color: #FAFAFA;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*ポートフォリオ*/
+.portfolio {
+width: 100%;
+background-color: #ECEFF1;
+}
+.portforio-contents {
+    width: 920px;
+    margin: 0 auto;
+    padding: 90px 0;
+    text-align: center;
+}
+.portfolio-header {
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+    display: inline-block;
+    position: relative;
+}
+.portfolio-header:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -8px; /*下線の上下位置調整*/
+    display: inline-block;
+    width: 70px; /*下線の幅*/
+    height: 3px; /*下線の太さ*/
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translate(-50%); /*位置調整*/
+    background-color:#EC715F; /*下線の色*/
+  }
+.portfolio-text-list {
+    margin-top: 30px;
+}
+.portfolio-text {
+    font-size: 16px;
+    color: black;
+}
+.portfolio-images {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.portfolio-image {
+    width: 300px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+}
+.image-1 {
+    background-image: url(sketch.jpg);
+    margin-bottom: 10px;
+}
+.image-2 {
+    background-image: url(websuku.png);
+    margin-bottom: 10px;
+}
+.image-3 {
+    background-image: url(write.jpg);
+    margin-bottom: 10px;
+}
+.image-4 {
+    background-image: url(webcamp.png);
+}
+.image-5 {
+    background-image: url(talk.jpg);
+}
+.image-6 {
+    background-image: url(webcamp-mother.png);
+}
+
+/*フューチャー*/
+.feature{
+    width: 100%;
+}
+.feature-contents{
+    width: 980px;
+    margin: 0 auto;
+    padding: 90px 0;
+    text-align: center;
+}
+.feature-header{
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+    display: inline-block;
+    position: relative;
+}
+.feature-header:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -8px; /*下線の上下位置調整*/
+    display: inline-block;
+    width: 70px; /*下線の幅*/
+    height: 3px; /*下線の太さ*/
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translate(-50%); /*位置調整*/
+    background-color:#EC715F; /*下線の色*/
+  }
+.feature-text-list{
+    margin-top: 30px;
+}
+.feature-text{
+    font-size: 16px;
+    color: black;
+}
+.feature-images{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.feature-image {
+    width: 320px;
+}
+.feature-image p {
+    text-align: left;
+    font-size: 16px;
+    color: black;
+}
+
+.feature-image i{
+    font-size: 60px;
+}
+
+.feature-image h4{
+    font-size: 20px;
+    color: black;
+    margin: 10px 0;
+}
+
+/*プロフィール*/
+.profile {
+    width: 100%;
+    background-color: #ECEFF1;
+}
+.profile-contents {
+    width: 920px;
+    margin: 0 auto;
+    padding: 90px 0;
+    text-align: center;
+}
+.profile-header {
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+    display: inline-block;
+    position: relative;
+}
+.profile-header:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -8px; /*下線の上下位置調整*/
+    display: inline-block;
+    width: 70px; /*下線の幅*/
+    height: 3px; /*下線の太さ*/
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translate(-50%); /*位置調整*/
+    background-color:#EC715F; /*下線の色*/
+  }
+.profile-text-list {
+    margin-top: 30px;
+}
+.profile-text {
+    font-size: 16px;
+    color: black;
+}
+.profile-images {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.profile-image {
+    width: 512px;
+}
+.my-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+.profile-my-text {
+    width: 512px;
+}
+.my-name {
+    text-align: left;
+    margin-bottom: 20px;
+}
+.my-name h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.my-name p{
+    font-size: 16px;
+    color: black;
+}
+.my-skills {
+    text-align: left;
+}
+.my-skills h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.my-skills p {
+    font-size: 16px;
+    color: black;
+}
+
+/* コンタクト */
+.contact {
+    width: 100%;
+}
+.contact-contents {
+    width: 800px;
+    margin: 0 auto;
+    padding: 90px 0;
+    text-align: center;
+}
+.contact-header {
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+    display: inline-block;
+    position: relative;
+}
+.contact-header:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -8px; /*下線の上下位置調整*/
+    display: inline-block;
+    width: 70px; /*下線の幅*/
+    height: 3px; /*下線の太さ*/
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translate(-50%); /*位置調整*/
+    background-color:#EC715F; /*下線の色*/
+  }
+.contact-text-list {
+    margin-top: 30px;
+}
+.contact-text {
+    font-size: 16px;
+    color: black;
+}
+.contact-text {
+    font-size: 16px;
+    color: black;
+}
+.contact-images {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-me {
+    width: 400px;
+    display: grid;
+    justify-content: center;
+}
+.my-mail {
+    width: fit-content;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.my-mail h4 {
+    font-size: 20px;
+ }
+.my-mail a {
+   color: black;
+}
+.my-tel {
+    width: fit-content;
+    text-align: left;
+}
+.my-tel h4 {
+    font-size: 20px;
+}
+.my-tel a {
+    color: black;
+}
+.sns {
+    width: 400px;
+}
+.sns p {
+    font-size: 20px;
+    margin-left: -35%;
+    font-weight: bold;
+}
+.sns-icons {
+    display: flex;
+    justify-content: center;
+}
+.fa-brands {
+    font-size: 50px;
+}
+
+.fa-twitter {
+    margin: 0 20px;
+}
+
+/* フッター */
+footer {
+    width: 100%;
+    height: 60px;
+    background-color: #EC715F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer p {
+    color: #FAFAFA;
+}
